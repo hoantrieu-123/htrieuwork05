@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng Xuân Triều - Website Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="C:\Users\hoang\Downloads\canhan\z6429671910855_be4498b7b491018d51912589f70fbced.jpg" alt="Ảnh của Hoàng Xuân Triều" class="avatar">
+        <h1>Hoang Xuan Trieu</h1>
+        <p>CNTT K22G</p>
+    </header>
+
+    <section id="about">
+        <h2>Thông tin cá nhân</h2>
+        <div class="info-card">
+            <img src="C:\Users\hoang\Downloads\canhan\anh.jpg" alt="Hoàng Xuân Triều" class="profile-pic">
+            <ul>
+                <li><strong>Họ và Tên:</strong> Hoàng Xuân Triều</li>
+                <li><strong>Năm sinh:</strong> 23-02-2005</li>
+                <li><strong>Cung hoàng đạo:</strong> Song Ngư</li>
+                <li><strong>Tình trạng:</strong> Độc thân</li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section id="thanh-tich">
+        <h2>Thành Tích</h2>
+        <div class="achievement-list">
+            <div class="achievement">
+                <img src="C:\Users\hoang\Downloads\canhan\giaykhensx.jpg" alt="Thành tích 1">
+                <p>Sinh viên xuất sắc</p>
+            </div>
+            <div class="achievement">
+                <img src="C:\Users\hoang\Downloads\canhan\sv5khoe.jpg" alt="Thành tích 2">
+                <p>Sinh viên 5 khỏe</p>
+            </div>
+            <div class="achievement">
+                <img src="C:\Users\hoang\Downloads\canhan\anhdem.png" alt="Thành tích 3">
+                <p>GPA</p>
+            </div>
+            <div class="achievement">
+                <img src="C:\Users\hoang\Downloads\canhan\hienmau.jpg" alt="Thành tích 4">
+                <p>Hiến Máu</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="volunteer">
+        <h2>Hoạt động tình nguyện</h2>
+        <div class="volunteer-list">
+            <div class="volunteer-item">
+                <img src="C:\Users\hoang\Downloads\canhan\z6429908010302_3f96990e943a330f864ce79ee3747c13.jpg" alt="Hiến máu" class="volunteer-icon">
+                <div class="volunteer-text">
+                    <h3>Hiến máu</h3>
+                </div>
+            </div>
+            <div class="volunteer-item">
+                <img src="C:\Users\hoang\Downloads\canhan\z6429908014528_b15ac00e516f3c21087d40aa1b57b416.jpg" alt="Bảo vệ môi trường" class="volunteer-icon">
+                <div class="volunteer-text">
+                    <h3>Hỗ trợ bão lũ</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <section id="skills">
+        <h2>Kỹ năng</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="C:\Users\hoang\Downloads\canhan\C.jpg" alt="Lập trình">
+                <h3>Lập trình</h3>
+                <p>Ngôn ngữ: C, C#, SQL, WinForms</p>
+            </div>
+            <div class="skill-card">
+                <img src="C:\Users\hoang\Downloads\canhan\SQL.jpg" alt="SQL Server">
+                <h3>SQL Server</h3>
+                <p>Thiết kế và quản lý database</p>
+            </div>
+            <div class="skill-card">
+                <img src="C:\Users\hoang\Downloads\canhan\winform.jpg" alt="WinForms">
+                <h3>WinForms</h3>
+                <p>Phát triển ứng dụng desktop</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="friends">
+        <h2>Bạn bè</h2>
+        <div class="friends-list">
+            <div class="friend">
+                <img src="C:\Users\hoang\Downloads\canhan\quocs.jpg" alt="Nguyễn Anh Quốc">
+                <p>Nguyễn Anh Quốc</p>
+            </div>
+            <div class="friend">
+                <img src="C:\Users\hoang\Downloads\canhan\dungx.jpg" alt="Hà Văn Dũng">
+                <p>Hà Văn Dũng</p>
+            </div>
+            <div class="friend">
+                <img src="C:\Users\hoang\Downloads\canhan\hieenf.jpg" alt="Ngô Thị Thanh Hiền">
+                <p>Ngô Thị Thanh Hiền</p>
+            </div>
+            <div class="friend">
+                <img src="C:\Users\hoang\Downloads\canhan\ddoanf.jpg" alt="Trần Phương Đoàn">
+                <p>Trần Phương Đoàn</p>
+            </div>
+            <div class="friend">
+                <img src="C:\Users\hoang\Downloads\canhan\tdung.jpg" alt="Trần Thị Thùy Dung">
+                <p>Trần Thị Thùy Dung</p>
+            </div>
+            <div class="friend">
+                <img src="C:\Users\hoang\Downloads\canhan\ddung.jpg" alt="Đỗ Thị Thùy Dung">
+                <p>Đỗ Thị Thùy Dung</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="so-thich">
+        <h2>Sở Thích</h2>
+        <p>Mình rất thích ăn uống và mong muốn của mình là trải nghiệm toàn bộ thức ăn tại Thái Nguyên</p>
+        <div class="food-list">
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\1.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\2.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\3.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\4.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\5.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\6.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\7.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\8.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\9.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\10.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\11.jpg">
+            </div>
+            <div class="food-item">
+                <img src="C:\Users\hoang\Downloads\canhan\12.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Liên hệ</h2>
+        <p><i class="fa-solid fa-phone"></i> 
+            <a href="tel:0865114601">0865114601</a>
+        </p>
+        <p><i class="fa-brands fa-facebook"></i> 
+            <a href="https://www.facebook.com/hoangtrieu.230205?mibextid=kFxxJD" target="_blank">Facebook</a>
+        </p>
+        <p><i class="fa-brands fa-instagram"></i> 
+            <a href="https://www.instagram.com/h.trieu05?igsh=MXA0NGd3ZDQ4YWhibA==" target="_blank">Instagram</a>
+        </p>
+        <p><i class="fa-brands fa-facebook-messenger"></i> 
+            <a href="https://zalo.me/0865114601" target="_blank">Zalo</a>
+        </p>
+    </footer>
+    
+    <script>
+        function openImage(imgElement) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImg");
+            
+            modal.style.display = "flex";
+            modalImg.src = imgElement.src;
+        }
+        
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+        </script>
+        
+</body>
+</html>
