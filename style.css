@@ -485,8 +485,23 @@ footer i {
     height: 80px;
     margin-bottom: 10px;
 }
-
+h1:hover, h2:hover {
+    color: #2196F3;
+    transition: color 0.3s ease;
+  }
+  
+  p:hover {
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  .avatar:hover, .achievement img:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+    transition: box-shadow 0.4s ease;
+  }
+  
 .skill-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+  
