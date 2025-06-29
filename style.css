@@ -665,3 +665,24 @@ body.dark-mode .volunteer-item {
     border-radius: 10px;
     object-fit: cover;
 }
+/* Phần ảnh NY */
+.ny-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ny-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Nếu muốn chia ảnh đều hàng ngang */
+@media (min-width: 600px) {
+  .ny-gallery img {
+    width: calc(33.333% - 20px); /* 3 ảnh/1 hàng, trừ khoảng cách */
+  }
+}
