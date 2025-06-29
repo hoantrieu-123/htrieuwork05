@@ -313,7 +313,6 @@ footer a:hover {
     color: #666;
 }
 
-/* Hiệu ứng phóng to ảnh */
 .modal {
     display: none;
     position: fixed;
@@ -440,7 +439,7 @@ footer p {
 }
 
 footer a {
-    color: #ffcc00; 
+    color: #ffffff; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -498,30 +497,31 @@ h1:hover, h2:hover {
 
 #navbar {
   position: fixed;
-  top: 0; left: 0; right: 0;
-  background: #333;
-  padding: 10px 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000000;
+  padding: 1px 5px;
+  border-radius: 30px;
   display: flex;
-  justify-content: center;
+  gap: 20px;
   z-index: 9999;
 }
+
 #navbar ul {
   list-style: none;
   margin: 0; padding: 0;
-  display: flex; gap: 20px;
+  display: flex; 
+  gap: 20px; 
 }
-#navbar ul li a, #navbar ul li button {
+
+#navbar ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  background: none;
-  border: none;
-  cursor: pointer;
+  font-size: 10px;
 }
 
-#navbar ul li a:hover {
-  text-decoration: underline;
-}
 
 #backToTop {
   position: fixed;
@@ -653,12 +653,11 @@ body.dark-mode .volunteer-item {
 
 
 #ny {
-  max-width: 700px; /* Giới hạn chiều rộng */
+  max-width: 700px;
   margin: 30px auto;
   padding: 20px;
 }
 
-/* Bố cục flex wrap + khoảng cách */
 .ny {
   display: flex;
   flex-wrap: wrap;
@@ -667,17 +666,15 @@ body.dark-mode .volunteer-item {
 }
 
 #ny .ny img {
-  width: 150px !important;
+  width: 10px !important;
   height: 150px !important;
-  border-radius: 10px;
+  border-radius: 20% !important;
   object-fit: cover;
 }
 
-
-/* Trên màn lớn thì chia 3 ảnh/hàng */
 @media (min-width: 600px) {
   .ny img {
-    flex: 1 1 calc(28% - 15px);
-    max-width: calc(28% - 15px);
+    flex: 1 1 calc(28% - 20px);
+    max-width: calc(28% - 20px);
   }
 }
