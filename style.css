@@ -680,6 +680,15 @@ body.dark-mode .volunteer-item {
   color: #f0f0f0;        
 }
 
+body.dark-mode .info-card1 {
+  background: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode .info-card1 p,
+body.dark-mode .info-card1 strong {
+  color: #f0f0f0;
+}
 
 #ny {
   max-width: 700px;
@@ -709,3 +718,4 @@ body.dark-mode .volunteer-item {
     max-width: calc(28% - 20px);
   }
 }
+
