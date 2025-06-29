@@ -650,3 +650,18 @@ body.dark-mode .volunteer-item {
   background-color: #333;
   color: #f0f0f0;        
 }
+
+.ny-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ny-photos img {
+    width: 125px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
