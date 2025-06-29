@@ -660,14 +660,14 @@ body.dark-mode .volunteer-item {
 
 .ny {
   display: flex;
-  flex-direction: row; /* mặc định */
+  flex-direction: row;
   justify-content: center;
   gap: 10px;
 }
 
 .ny img {
   width: 100%;
-  max-width: 110px !important; /* Ảnh không rộng quá 200px */
+  max-width: 80px !important;
   height: auto;
   border-radius: 20px;
   object-fit: cover;
