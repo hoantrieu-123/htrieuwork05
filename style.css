@@ -1,4 +1,4 @@
-/* Import font đẹp */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     background: linear-gradient(135deg, #add5f6, #000000);
     color: white;
@@ -39,7 +38,6 @@ p {
     font-size: 16px;
 }
 
-/* Các phần trong trang */
 section {
     background: white;
     margin: 30px auto;
@@ -54,7 +52,6 @@ section:hover {
     transform: scale(1.02);
 }
 
-/* Ảnh trong các phần */
 .volunteer-icon, .friend img {
     width: 90px;
     height: 90px;
@@ -68,7 +65,6 @@ section:hover {
     box-shadow: 0px 4px 10px rgba(33, 150, 243, 0.5);
 }
 
-/* Hoạt động tình nguyện */
 .volunteer-list {
     display: flex;
     flex-direction: column;
@@ -97,7 +93,6 @@ section:hover {
     margin-left: 15px;
 }
 
-/* Bạn bè */
 .friends-list {
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +110,6 @@ section:hover {
     font-weight: 500;
 }
 
-/* Hiệu ứng phóng to ảnh */
 .modal {
     display: none;
     position: fixed;
@@ -151,7 +145,6 @@ section:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
 footer {
     background: #222;
     color: white;
@@ -171,7 +164,7 @@ footer a:hover {
 
 
 .highlight-section {
-    background: #ffffff; /* Màu nền vàng nhạt */
+    background: #ffffff; 
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
@@ -180,7 +173,7 @@ footer a:hover {
 }
 
 .highlight-section h2 {
-    color: #000000; /* Màu tiêu đề cam */
+    color: #000000; 
 }
 
 #volunteer ul {
@@ -197,7 +190,7 @@ footer a:hover {
 }
 
 .icon {
-    width: 200px;  /* Điều chỉnh kích thước ảnh */
+    width: 200px; 
     height: 200px;
     margin-right: 10px;
 }
@@ -208,7 +201,7 @@ footer a:hover {
 
 .friends-list {
     display: flex;
-    flex-wrap: wrap; /* Cho phép ảnh xuống dòng nếu màn hình nhỏ */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -218,11 +211,10 @@ footer a:hover {
     height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #2196F3; /* Viền xanh đẹp hơn */
+    border: 3px solid #2196F3; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hiệu ứng khi hover vào ảnh */
 .friend img:hover {
     transform: scale(1.1);
     box-shadow: 0px 4px 10px rgba(33, 150, 243, 0.5);
@@ -448,7 +440,7 @@ footer p {
 }
 
 footer a {
-    color: #ffcc00; /* Màu vàng đẹp hơn */
+    color: #ffcc00; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -503,7 +495,7 @@ h1:hover, h2:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-/* Navbar */
+
 #navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -531,7 +523,6 @@ h1:hover, h2:hover {
   text-decoration: underline;
 }
 
-/* Back to Top */
 #backToTop {
   position: fixed;
   bottom: 30px; right: 30px;
@@ -545,14 +536,12 @@ h1:hover, h2:hover {
   font-size: 20px;
 }
 
-/* Dark Mode */
 .dark-mode {
   background: #121212;
   color: #eee;
 }
 .dark-mode a { color: #80cbc4; }
 
-/* AOS default overwrite (optional) */
 [data-aos] {
   opacity: 0;
   transition-property: transform, opacity;
@@ -561,13 +550,12 @@ h1:hover, h2:hover {
   opacity: 1;
 }
 
-/* --- Dark Mode toàn trang --- */
 body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
 }
 
-/* Tiêu đề các phần */
+
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -576,17 +564,17 @@ body.dark-mode li {
   color: #f0f0f0;
 }
 
-/* Nút, link */
+
 body.dark-mode a {
-  color: #8ab4f8; /* Xanh nhẹ */
+  color: #8ab4f8; 
 }
 
-/* Navbar nếu có màu nền */
+
 body.dark-mode #navbar {
   background-color: #1e1e1e;
 }
 
-/* Thẻ card info */
+
 body.dark-mode .info-card {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -597,7 +585,7 @@ body.dark-mode .info-card strong {
   color: #f0f0f0;
 }
 
-/* Thành tích, kỹ năng, bạn bè, sở thích */
+
 body.dark-mode .achievement,
 body.dark-mode .skill-card,
 body.dark-mode .friend,
@@ -605,7 +593,6 @@ body.dark-mode .food-item {
   background-color: #1e1e1e;
 }
 
-/* Footer */
 body.dark-mode footer {
   background-color: #1e1e1e;
   color: #f0f0f0;
@@ -615,7 +602,6 @@ body.dark-mode footer a {
   color: #8ab4f8;
 }
 
-/* Nút dark mode */
 #darkModeToggle {
   position: fixed;
   bottom: 20px;
@@ -649,4 +635,18 @@ body.dark-mode #so-thich {
 body.dark-mode #so-thich h2,
 body.dark-mode #so-thich p {
   color: #f0f0f0;
+}
+body.dark-mode #volunteer {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+body.dark-mode #volunteer h2,
+body.dark-mode #volunteer h3 {
+  color: #f0f0f0;
+}
+
+body.dark-mode .volunteer-item {
+  background-color: #333;
+  color: #f0f0f0;        
 }

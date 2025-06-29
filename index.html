@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Bổ sung -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
@@ -260,15 +258,11 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
-
-  // Nút Back to Top
   const backToTop = document.getElementById("backToTop");
   window.onscroll = function() {
     backToTop.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
   };
   backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
-  // Dark Mode toggle
   const darkToggle = document.getElementById("darkModeToggle");
   darkToggle.onclick = () => {
     document.body.classList.toggle("dark-mode");
