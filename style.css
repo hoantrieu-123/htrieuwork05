@@ -621,7 +621,7 @@ body.dark-mode footer a {
 
 #backToTop {
   position: fixed;
-  bottom: 15px; right: 15px;
+  bottom: 10px; right: 10px;
   display: none;
   background: #333;
   color: #fff;
