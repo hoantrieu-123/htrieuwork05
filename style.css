@@ -665,24 +665,33 @@ body.dark-mode .volunteer-item {
     border-radius: 10px;
     object-fit: cover;
 }
-/* Phần ảnh NY */
-.ny-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+/* Container cho phần NY */
+#ny {
+  max-width: 700px; /* Giới hạn chiều rộng */
+  margin: 30px auto;
+  padding: 20px;
 }
 
-.ny-gallery img {
-  max-width: 100%;
+/* Bố cục flex wrap + khoảng cách */
+.ny {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ny img {
+  width: 100%;
+  max-width: 200px; /* Ảnh không rộng quá 200px */
   height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
 
-/* Nếu muốn chia ảnh đều hàng ngang */
+/* Trên màn lớn thì chia 3 ảnh/hàng */
 @media (min-width: 600px) {
-  .ny-gallery img {
-    width: calc(33.333% - 20px); /* 3 ảnh/1 hàng, trừ khoảng cách */
+  .ny img {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
   }
 }
