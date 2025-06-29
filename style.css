@@ -503,5 +503,99 @@ h1:hover, h2:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+}
+#navbar ul {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex; gap: 20px;
+}
+#navbar ul li a, #navbar ul li button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-  
+#navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Back to Top */
+#backToTop {
+  position: fixed;
+  bottom: 30px; right: 30px;
+  display: none;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px; height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+.dark-mode a { color: #80cbc4; }
+
+/* AOS default overwrite (optional) */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+#darkModeToggle {
+  position: fixed;
+  bottom: 20px;  /* cách mép dưới 20px */
+  left: 20px;    /* cách mép trái 20px */
+  z-index: 1000; /* nằm trên các phần tử khác */
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Dark mode style */
+body.dark-mode {
+  background-color: #121212; /* nền tối */
+  color: #f0f0f0;            /* chữ mặc định sáng */
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a {
+  color: #f0f0f0;  /* ép màu chữ sáng cho các phần chính */
+}
+
+body.dark-mode a {
+  color: #66ccff; /* link thì có thể xanh dương sáng */
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode nav {
+  background-color: #1e1e1e; /* nếu header, footer có nền riêng */
+}

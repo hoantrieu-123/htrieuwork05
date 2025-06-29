@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Bổ sung -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
+
     <header>
         <img src="z6429671910855_be4498b7b491018d51912589f70fbced.jpg" alt="Ảnh của Hoàng Xuân Triều" class="avatar">
         <h1>Hoang Xuan Trieu</h1>
@@ -27,8 +33,21 @@
             </ul>
         </div>
     </section>
-
     
+   <nav id="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#thanh-tich">Thành Tích</a></li>
+    <li><a href="#volunteer">Hoạt động</a></li>
+    <li><a href="#skills">Kỹ năng</a></li>
+    <li><a href="#friends">Bạn bè</a></li>
+    <li><a href="#so-thich">Sở thích</a></li>
+  </ul>
+</nav>
+
+<button id="backToTop" title="Lên đầu trang">↑</button>
+
+
     <section id="thanh-tich">
         <h2>Thành Tích</h2>
         <div class="achievement-list">
@@ -232,21 +251,54 @@
         <p><i class="fa-brands fa-facebook-messenger"></i> 
             <a href="https://zalo.me/0865114601" target="_blank">Zalo</a>
         </p>
+        <button id="darkModeToggle">🌙</button>
+
     </footer>
     
-    <script>
-        function openImage(imgElement) {
-            var modal = document.getElementById("imageModal");
-            var modalImg = document.getElementById("modalImg");
-            
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Nút Back to Top
+  const backToTop = document.getElementById("backToTop");
+  window.onscroll = function() {
+    backToTop.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+  };
+  backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Dark Mode toggle
+  const darkToggle = document.getElementById("darkModeToggle");
+  darkToggle.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+  };
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var images = document.querySelectorAll("img");
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImg");
+
+    images.forEach(function (img) {
+        img.addEventListener("click", function () {
             modal.style.display = "flex";
-            modalImg.src = imgElement.src;
+            modalImg.src = this.src;
+        });
+    });
+
+    document.querySelector(".close").addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
         }
-        
-        function closeImage() {
-            document.getElementById("imageModal").style.display = "none";
-        }
-        </script>
-        
+    });
+});
+</script>
+
 </body>
 </html>
