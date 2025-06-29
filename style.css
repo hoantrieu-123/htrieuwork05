@@ -651,21 +651,7 @@ body.dark-mode .volunteer-item {
   color: #f0f0f0;        
 }
 
-.ny-photos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-.ny-photos img {
-    width: 125px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-}
-/* Container cho phần NY */
 #ny {
   max-width: 700px; /* Giới hạn chiều rộng */
   margin: 30px auto;
@@ -682,7 +668,7 @@ body.dark-mode .volunteer-item {
 
 .ny img {
   width: 100%;
-  max-width: 200px; /* Ảnh không rộng quá 200px */
+  max-width: 150px; /* Ảnh không rộng quá 200px */
   height: auto;
   border-radius: 10px;
   object-fit: cover;
