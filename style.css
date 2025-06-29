@@ -667,7 +667,7 @@ body.dark-mode .volunteer-item {
 
 .ny img {
   width: 100%;
-  max-width: 150px !important; /* Ảnh không rộng quá 200px */
+  max-width: 110px !important; /* Ảnh không rộng quá 200px */
   height: auto;
   border-radius: 20px;
   object-fit: cover;
