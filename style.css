@@ -666,9 +666,9 @@ body.dark-mode .volunteer-item {
 }
 
 #ny .ny img {
-  width: 10px !important;
+  width: 50px !important;
   height: 150px !important;
-  border-radius: 20% !important;
+  border-radius: 20px;
   object-fit: cover;
 }
 
