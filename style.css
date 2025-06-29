@@ -660,17 +660,18 @@ body.dark-mode .volunteer-item {
 
 .ny {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row; /* mặc định */
   justify-content: center;
   gap: 10px;
 }
 
 #ny .ny img {
-  width: 50px !important;
-  height: 150px !important;
+  width: 30% !important; 
+  height: auto;
   border-radius: 20px;
   object-fit: cover;
 }
+
 
 @media (min-width: 600px) {
   .ny img {
