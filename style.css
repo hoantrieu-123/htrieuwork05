@@ -561,41 +561,92 @@ h1:hover, h2:hover {
   opacity: 1;
 }
 
-#darkModeToggle {
-  position: fixed;
-  bottom: 20px;  /* cách mép dưới 20px */
-  left: 20px;    /* cách mép trái 20px */
-  z-index: 1000; /* nằm trên các phần tử khác */
-  background: #333;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px 12px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/* Dark mode style */
+/* --- Dark Mode toàn trang --- */
 body.dark-mode {
-  background-color: #121212; /* nền tối */
-  color: #f0f0f0;            /* chữ mặc định sáng */
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
+/* Tiêu đề các phần */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode p,
-body.dark-mode li,
-body.dark-mode a {
-  color: #f0f0f0;  /* ép màu chữ sáng cho các phần chính */
+body.dark-mode li {
+  color: #f0f0f0;
 }
 
+/* Nút, link */
 body.dark-mode a {
-  color: #66ccff; /* link thì có thể xanh dương sáng */
+  color: #8ab4f8; /* Xanh nhẹ */
 }
 
-body.dark-mode header,
-body.dark-mode footer,
-body.dark-mode nav {
-  background-color: #1e1e1e; /* nếu header, footer có nền riêng */
+/* Navbar nếu có màu nền */
+body.dark-mode #navbar {
+  background-color: #1e1e1e;
+}
+
+/* Thẻ card info */
+body.dark-mode .info-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode .info-card li,
+body.dark-mode .info-card strong {
+  color: #f0f0f0;
+}
+
+/* Thành tích, kỹ năng, bạn bè, sở thích */
+body.dark-mode .achievement,
+body.dark-mode .skill-card,
+body.dark-mode .friend,
+body.dark-mode .food-item {
+  background-color: #1e1e1e;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode footer a {
+  color: #8ab4f8;
+}
+
+/* Nút dark mode */
+#darkModeToggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+#darkModeToggle:hover {
+  background-color: #555;
+}
+body.dark-mode section {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+body.dark-mode section h2 {
+  color: #f0f0f0;
+}
+
+body.dark-mode #so-thich {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+body.dark-mode #so-thich h2,
+body.dark-mode #so-thich p {
+  color: #f0f0f0;
 }
