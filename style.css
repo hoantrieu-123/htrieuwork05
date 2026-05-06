@@ -17,17 +17,23 @@ header {
     text-align: center;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+
+    position: relative;
+    align-items: center;
 }
 .logo {
-    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     height: 100px;
     border-radius: 50%;
-    float: left;
+    flex: 1;
     object-fit: cover;
     border: 2px solid white;
     margin-bottom: 10px;
 }
 .avatar {
+    
     width: 120px;
     height: 120px;
     border-radius: 50%;
